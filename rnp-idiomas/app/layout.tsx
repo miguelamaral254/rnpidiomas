@@ -22,7 +22,7 @@ export default function RootLayout({
         <nav >
           <ul className= "flex gap-2">
             <li><Link href="/">Home</Link></li>
-            <li><Link href="/users">Sobre</Link></li>
+            <li><Link href="/about">Sobre</Link></li>
             <li><Link href="/news">Notícias</Link></li>
             <li><Link href="projects">Projetos</Link></li>
             <li><Link href="contact">Contato</Link></li>
