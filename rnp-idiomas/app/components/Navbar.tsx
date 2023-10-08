@@ -1,13 +1,15 @@
 import React from 'react'
 import Link from "next/link";
+import Image from 'next/image';
 
 export default function Navbar() {
   return <>
   
-  <div className="w-full flex justify-between align-middle items-end p-5 ">
-          <div className="w-10 h-10 bg-black"><p className="text-white">IMG</p></div>
+  <div className="container flex justify-between align-middle items-end p-5 ">
+          <Image src={require("../src/images/359464103_757245303077001_5758154635758079026_n.jpg")} alt='icon'
+          className='w-10' />
           <nav>
-            <ul className="flex gap-2">
+            <ul className="flex gap-3">
               <li className=" hover:text-blue-400">
                 <Link href="/">Home</Link>
               </li>
