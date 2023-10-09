@@ -17,7 +17,7 @@ const images = [
     width: 400,
     height: 100,
   },
-  // Adicione mais imagens conforme necessário
+  // slots for images
 ];
 
 const CarouselComponent: React.FC = () => {
@@ -26,7 +26,7 @@ const CarouselComponent: React.FC = () => {
       {images.map((image, index) => (
         <div key={index}>
           <Image
-            src={image.src.default} // Use .default para acessar o valor retornado por require
+            src={image.src.default} 
             alt={image.alt}
             width={image.width}
             height={image.height}
