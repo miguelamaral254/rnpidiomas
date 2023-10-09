@@ -1,6 +1,7 @@
 import Image from "next/image";
+import CarouselComponent from './components/Carousel';
 
-export default function Home() {
+const Home: React.FC = () => {
   return (
     <div className="container mx-auto">
       <div className="w-full flex justify-center bg-red-400">
@@ -16,6 +17,18 @@ export default function Home() {
             className="w-auto"
           />
         </div>
+      </section>
+      {/* End Banner section */}
+      {/* Banner section */}
+      <section className="flex justify-center bg-blue-400">
+      <div>
+      
+
+      <main>
+        <h1>Carousel Example</h1>
+        <CarouselComponent />
+      </main>
+    </div>
       </section>
       {/* End Banner section */}
       
@@ -58,3 +71,4 @@ export default function Home() {
     </div>
   );
 }
+export default Home;
