@@ -64,36 +64,36 @@ const Navbar = () => {
                 : "translate-y-5 opacity-0 transition-all duration-300 ease-in"
             } ${isOpen ? "top-3" : "top-1/2"}`}
           >
-            <li className="hover:text-blue-400">
+            <li className="hover:text-green-500">
               <Link href="/">Home</Link>
             </li>
-            <li className="hover:text-blue-400">
+            <li className="hover:text-green-500">
               <Link href="/about">Sobre</Link>
             </li>
-            <li className="hover:text-blue-400">
+            <li className="hover:text-green-500">
               <Link href="/news">Notícias</Link>
             </li>
-            <li className="hover:text-blue-400">
+            <li className="hover:text-green-500">
               <Link href="/projects">Projetos</Link>
             </li>
-            <li className="hover:text-blue-400">
+            <li className="hover:text-green-500">
               <Link href="/contact">Contato</Link>
             </li>
           </ul>
           <ul className="lg:flex space-x-4 hidden lg:block">
-          <li className="hover:text-blue-400">
+          <li className="hover:text-green-500">
               <Link href="/">Home</Link>
             </li>
-            <li className="hover:text-blue-400">
+            <li className="hover:text-green-500">
               <Link href="/about">Sobre</Link>
             </li>
-            <li className="hover:text-blue-400">
+            <li className="hover:text-green-500">
               <Link href="/news">Notícias</Link>
             </li>
-            <li className="hover:text-blue-400">
+            <li className="hover:text-green-500">
               <Link href="/projects">Projetos</Link>
             </li>
-            <li className="hover:text-blue-400">
+            <li className="hover:text-green-500">
               <Link href="/contact">Contato</Link>
             </li>
           </ul>
