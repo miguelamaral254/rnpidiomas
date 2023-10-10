@@ -1,5 +1,5 @@
 import Image from "next/image";
-import CarouselComponent from './components/Carousel';
+import CarouselComponent from "./components/Carousel";
 
 const Home: React.FC = () => {
   return (
@@ -7,7 +7,7 @@ const Home: React.FC = () => {
       <div className="w-full flex justify-center bg-red-400">
         <h1>HOME PAGE</h1>
       </div>
-      
+
       {/* Banner section */}
       <section className="flex justify-center bg-blue-400">
         <div className="w-full md:w-2/3 lg:w-1/2">
@@ -21,17 +21,14 @@ const Home: React.FC = () => {
       {/* End Banner section */}
       {/* Banner section */}
       <section className="flex justify-center bg-blue-400">
-      <div>
-      
-
-      <main>
-        <h1>Carousel Example</h1>
-        <CarouselComponent />
-      </main>
-    </div>
+        <div>
+          <main>
+            <CarouselComponent />
+          </main>
+        </div>
       </section>
       {/* End Banner section */}
-      
+
       {/* Content section */}
       <section className="flex justify-center bg-blue-400">
         <div className="w-full md:w-2/3 lg:w-1/2 bg-white p-4">
@@ -46,14 +43,20 @@ const Home: React.FC = () => {
           </p>
         </div>
         <div className="w-full md:w-1/3 lg:w-1/4">
-          <Image src={require("./src/images/rec-n-play-2022-3.jpg")} alt="img" />
+          <Image
+            src={require("./src/images/rec-n-play-2022-3.jpg")}
+            alt="img"
+          />
         </div>
       </section>
       {/* End Content section */}
       {/* Content section */}
       <section className="flex justify-center bg-blue-400">
         <div className="w-full md:w-1/3 lg:w-1/4">
-          <Image src={require("./src/images/rec-n-play-2022-3.jpg")} alt="img" />
+          <Image
+            src={require("./src/images/rec-n-play-2022-3.jpg")}
+            alt="img"
+          />
         </div>
         <div className="w-full md:w-2/3 lg:w-1/2 bg-white p-4">
           <h1 className="text-xl md:text-2xl lg:text-3xl font-bold mb-2">
@@ -70,5 +73,5 @@ const Home: React.FC = () => {
       {/* End Content section */}
     </div>
   );
-}
+};
 export default Home;
