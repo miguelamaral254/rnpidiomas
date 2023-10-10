@@ -3,13 +3,9 @@ import CarouselComponent from "./components/Carousel";
 
 const Home: React.FC = () => {
   return (
-    <div className="container mx-auto">
-      <div className="w-full flex justify-center bg-red-400">
-        <h1>HOME PAGE</h1>
-      </div>
-
+    <div className="container mx-auto bg-black">
       {/* Banner section */}
-      <section className="flex justify-center bg-blue-400">
+      <section className="flex justify-center ">
         <div className="w-full md:w-2/3 lg:w-1/2">
           <Image
             src={require("./src/images/IMG_6126-1035x425.jpeg")}
@@ -19,20 +15,11 @@ const Home: React.FC = () => {
         </div>
       </section>
       {/* End Banner section */}
-      {/* Banner section */}
-      <section className="flex justify-center bg-blue-400">
-        <div>
-          <main>
-            <CarouselComponent />
-          </main>
-        </div>
-      </section>
-      {/* End Banner section */}
 
       {/* Content section */}
-      <section className="flex justify-center bg-blue-400">
-        <div className="w-full md:w-2/3 lg:w-1/2 bg-white p-4">
-          <h1 className="text-xl md:text-2xl lg:text-3xl font-bold mb-2">
+      <section className="flex justify-center ">
+        <div className="w-full md:w-2/3 lg:w-1/2 text-white p-10">
+          <h1 className="text-sm  font-bold mb-2">
             Lorem Ipsum
           </h1>
           <p className="text-sm md:text-base lg:text-lg">
@@ -51,7 +38,7 @@ const Home: React.FC = () => {
       </section>
       {/* End Content section */}
       {/* Content section */}
-      <section className="flex justify-center bg-blue-400">
+      <section className="flex justify-center">
         <div className="w-full md:w-1/3 lg:w-1/4">
           <Image
             src={require("./src/images/rec-n-play-2022-3.jpg")}
@@ -71,6 +58,13 @@ const Home: React.FC = () => {
         </div>
       </section>
       {/* End Content section */}
+      {/* Carousel section */}
+      <section className="flex justify-center ">
+        <main>
+          <CarouselComponent />
+        </main>
+      </section>
+      {/* End Carousel section */}
     </div>
   );
 };

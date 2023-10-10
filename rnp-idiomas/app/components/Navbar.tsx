@@ -1,4 +1,5 @@
 "use client";
+import Image from "next/image";
 import Link from "next/link";
 import React, { useState } from "react";
 
@@ -13,7 +14,7 @@ const Navbar = () => {
     <nav className="bg-black text-white p-4 relative">
       <div className="container mx-auto">
         <div className="flex justify-between items-center">
-          <div className="text-white font-semibold text-xl">Logo</div>
+          <div className="text-white font-semibold text-xl"><Image src={require("../src/images/359464103_757245303077001_5758154635758079026_n.jpg")} alt="logo" className="w-1/3 bg-blend-overlay"/></div>
           <div className="lg:hidden">
             <button
               onClick={toggleMenu}
