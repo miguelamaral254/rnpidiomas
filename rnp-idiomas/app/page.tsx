@@ -3,14 +3,14 @@ import CarouselComponent from "./components/Carousel";
 
 const Home: React.FC = () => {
   return (
-    <div className="container mx-auto bg-black">
+    <div className="mx-auto bg-black">
       {/* Banner section */}
-      <section className="flex justify-center ">
+      <section className="flex justify-center w-full ">
         <div className="w-full md:w-2/3 lg:w-1/2">
           <Image
             src={require("./src/images/IMG_6126-1035x425.jpeg")}
             alt="img"
-            className="w-auto"
+            className=""
           />
         </div>
       </section>
