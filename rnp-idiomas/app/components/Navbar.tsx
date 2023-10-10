@@ -11,18 +11,18 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="bg-black text-white p-4 relative">
+    <nav className="bg-white text-blue-600 p-4 relative">
       <div className="container mx-auto">
         <div className="flex justify-between items-center">
           <div className="text-white font-semibold text-xl">
-            <Image src={require("../src/images/359464103_757245303077001_5758154635758079026_n.jpg")} alt="rnp logo"
-            className="w-10 h-10"
+            <Image src={require("../src/images/rnplogo.webp")} alt="rnp logo"
+            className="w-1/4"
             />
           </div>
           <div className="lg:hidden">
             <button
               onClick={toggleMenu}
-              className="text-white hover:text-gray-300 focus:outline-none"
+              className="text-blue-600 hover:text-gray-300 focus:outline-none"
             >
               {isOpen ? (
                 <svg
@@ -58,42 +58,42 @@ const Navbar = () => {
             </button>
           </div>
           <ul
-            className={`lg:hidden absolute right-0 bg-black w-40 p-4 space-y-2 transform ${
+            className={`lg:hidden absolute right-0 bg-white w-40 p-4 space-y-2 transform ${
               isOpen
                 ? "translate-y-12 opacity-100 transition-all duration-300 ease-out"
                 : "translate-y-5 opacity-0 transition-all duration-300 ease-in"
             } ${isOpen ? "top-3" : "top-1/2"}`}
           >
-            <li className="hover:text-green-500">
+            <li className="hover:text-yellow-600">
               <Link href="/">Home</Link>
             </li>
-            <li className="hover:text-green-500">
+            <li className="hover:text-yellow-600">
               <Link href="/about">Sobre</Link>
             </li>
-            <li className="hover:text-green-500">
+            <li className="hover:text-yellow-600">
               <Link href="/news">Notícias</Link>
             </li>
-            <li className="hover:text-green-500">
+            <li className="hover:text-yellow-600">
               <Link href="/projects">Projetos</Link>
             </li>
-            <li className="hover:text-green-500">
+            <li className="hover:text-yellow-600">
               <Link href="/contact">Contato</Link>
             </li>
           </ul>
           <ul className="lg:flex space-x-4 hidden lg:block">
-          <li className="hover:text-green-500">
+          <li className="hover:text-yellow-600">
               <Link href="/">Home</Link>
             </li>
-            <li className="hover:text-green-500">
+            <li className="hover:text-yellow-600">
               <Link href="/about">Sobre</Link>
             </li>
-            <li className="hover:text-green-500">
+            <li className="hover:text-yellow-600">
               <Link href="/news">Notícias</Link>
             </li>
-            <li className="hover:text-green-500">
+            <li className="hover:text-yellow-600">
               <Link href="/projects">Projetos</Link>
             </li>
-            <li className="hover:text-green-500">
+            <li className="hover:text-yellow-600">
               <Link href="/contact">Contato</Link>
             </li>
           </ul>

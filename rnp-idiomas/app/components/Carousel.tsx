@@ -6,36 +6,29 @@ import "react-responsive-carousel/lib/styles/carousel.min.css";
 
 const images = [
   {
-    src: require("../src/images/rec-n-play-2022-3.jpg"),
+    src: require("../src/images/bg-1.jpg"),
     alt: "Image 1",
-    width: 400,
-    height: 100,
+    
   },
   {
-    src: require("../src/images/BO_9020-1024x683.jpg"),
+    src: require("../src/images/bg-2.jpg"),
     alt: "Image 2",
-    width: 400,
-    height: 100,
+    
   },
-  {
-    src: require("../src/images/recnplay-scaled.jpg"),
-    alt: "Image 2",
-    width: 400,
-    height: 100,
-  },
+ 
   // slots for images
 ];
 
 const CarouselComponent: React.FC = () => {
   return (
-    <Carousel>
+    <Carousel >
       {images.map((image, index) => (
         <div key={index}>
           <Image
             src={image.src.default}
             alt={image.alt}
-            width={image.width}
-            height={image.height}
+            
+            
           />
         </div>
       ))}

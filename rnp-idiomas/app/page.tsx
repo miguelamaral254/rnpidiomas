@@ -4,6 +4,13 @@ import CarouselComponent from "./components/Carousel";
 const Home: React.FC = () => {
   return (
     <div className="mx-auto bg-black">
+      {/* Carousel section */}
+      <section className="flex w-full justify-center ">
+        <main>
+          <CarouselComponent />
+        </main>
+      </section>
+      {/* End Carousel section */}
       {/* Banner section */}
       <section className="flex justify-center w-full ">
         <div className="w-full md:w-2/3 lg:w-1/2">
@@ -58,13 +65,6 @@ const Home: React.FC = () => {
         </div>
       </section>
       {/* End Content section */}
-      {/* Carousel section */}
-      <section className="flex justify-center ">
-        <main>
-          <CarouselComponent />
-        </main>
-      </section>
-      {/* End Carousel section */}
     </div>
   );
 };
